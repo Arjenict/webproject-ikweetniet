@@ -490,6 +490,16 @@ progress {
   font-size: 1.25rem;
   font-weight: 300;
 }
+.backgroundkrusty {
+    background-color: var(--bg-overlay-color); 
+    background-image: none;
+    width: 100%;
+    opacity: 0.75; 
+    background-position: fixed; 
+    pointer-events: none;
+    --column-width: 980px;
+    --column-flex: 980;
+}
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
@@ -499,6 +509,17 @@ progress {
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
+  }
+}
+
+.display-background {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 5rem;
+}
+@media (min-width: 1200px) {
+  .display-2 {
+    font-size: 4.5rem;
   }
 }
 
@@ -8185,7 +8206,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+color: rgba(255, 255, 0, 1) !important;
 }
 
 .text-secondary {
@@ -11560,9 +11581,12 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background: #F6FF00;
+background: radial-gradient(ellipse farthest-corner at center center, #F6FF00 20%, #0AC8CF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
 }
 
 .rounded-4 {
